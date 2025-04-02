@@ -66,12 +66,12 @@ const App = () => {
 
   const sendToBackend = async (imageBlob) => {
     setIsProcessing(true);
-
+    const BACKEND_URL = "https://face-mask-detector-j0f6.onrender.com";
     const formData = new FormData();
     formData.append("image", imageBlob, "frame.jpg");
 
     try {
-      const response = await axios.post("http://localhost:5000/detect", formData);
+      const response = await axios.post(`${BACKEND_URL}/detect`, formData);
       setMaskStatus(response.data.mask_status);
       
       // Get fresh canvas context since we might have updated dimensions
