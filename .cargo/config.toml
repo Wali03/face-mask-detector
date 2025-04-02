@@ -1,0 +1,5 @@
+[build]
+target-dir = "/tmp/cargo-target"
+
+[registry]
+cache-dir = "/tmp/cargo-cache"
