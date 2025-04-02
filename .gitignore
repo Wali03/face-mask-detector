@@ -1,0 +1,16 @@
+# Python dependencies
+venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs and caches
+logs/
+*.log
+
+# Model and data files
+*.sav
+uploads/
+
+# node modules
+node_modules/
